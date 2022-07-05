@@ -1,0 +1,40 @@
+<title>GEOMAP</title>
+<body>
+  	<div class="content">
+    	<h1 class="heading">GeoMap</h1>
+		<div class="container" style="margin-top: 97px;">
+			<div class="row">
+				<div class="col-md-6">
+					<img src="assets/image/undraw_remotely_2j6y.png" alt="Image" class="img-fluid">
+				</div>
+				<div class="col-md-6 contents">
+					<div class="row justify-content-center">
+						<div class="col-md-8">
+							<div class="mb-4">
+								<h3>Sign In</h3>
+							</div>
+							<form name='loginForm' (submit)="doLogin()">
+								<table>
+									<tr>
+										<td>Email: <span class="red">*</span></td>
+										<td><input type='text' name='email' [(ngModel)]="email"></td>
+									</tr>
+									<tr>
+										<td>Password: <span class="red">*</span></td>
+										<td><input type='password' name='password' [(ngModel)]="password"/></td>
+									</tr>
+									<tr>
+										<td colspan='2' ><input name="submit" class="margin_top" type="submit"
+											value="Login" /></td>
+									</tr>
+							</table>
+							</form>
+							<div style="margin-top: 24px;color: rgb(165 12 12);" *ngIf='error'>{{error}}</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div>
+</body>
+
